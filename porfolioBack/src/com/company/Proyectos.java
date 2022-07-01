@@ -1,9 +1,9 @@
-
+package com.company;
 
 /**
  * Class proyectos
  */
-public class proyectos {
+public class Proyectos {
 
   //
   // Fields
@@ -19,8 +19,16 @@ public class proyectos {
   //
   // Constructors
   //
-  public proyectos () { };
-  
+  public Proyectos() { };
+
+  public Proyectos(int idproyectos, String nombre, String fechaComienzo, String fechaFinalizacion, String descripcion, String urlGitHub) {
+    this.idproyectos = idproyectos;
+    this.nombre = nombre;
+    this.fechaComienzo = fechaComienzo;
+    this.fechaFinalizacion = fechaFinalizacion;
+    this.descripcion = descripcion;
+    this.urlGitHub = urlGitHub;
+  }
   //
   // Methods
   //
@@ -30,7 +38,7 @@ public class proyectos {
   // Accessor methods
   //
 
-  /**
+  /*
    * Set the value of idproyectos
    * @param newVar the new value of idproyectos
    */
@@ -38,7 +46,7 @@ public class proyectos {
     idproyectos = newVar;
   }
 
-  /**
+  /*
    * Get the value of idproyectos
    * @return the value of idproyectos
    */
@@ -46,7 +54,7 @@ public class proyectos {
     return idproyectos;
   }
 
-  /**
+  /*
    * Set the value of nombre
    * @param newVar the new value of nombre
    */
@@ -54,7 +62,7 @@ public class proyectos {
     nombre = newVar;
   }
 
-  /**
+  /*
    * Get the value of nombre
    * @return the value of nombre
    */
@@ -62,7 +70,7 @@ public class proyectos {
     return nombre;
   }
 
-  /**
+  /*
    * Set the value of fechaComienzo
    * @param newVar the new value of fechaComienzo
    */
@@ -70,7 +78,7 @@ public class proyectos {
     fechaComienzo = newVar;
   }
 
-  /**
+  /*
    * Get the value of fechaComienzo
    * @return the value of fechaComienzo
    */
@@ -78,7 +86,7 @@ public class proyectos {
     return fechaComienzo;
   }
 
-  /**
+  /*
    * Set the value of fechaFinalizacion
    * @param newVar the new value of fechaFinalizacion
    */
@@ -86,7 +94,7 @@ public class proyectos {
     fechaFinalizacion = newVar;
   }
 
-  /**
+  /*
    * Get the value of fechaFinalizacion
    * @return the value of fechaFinalizacion
    */
@@ -94,7 +102,7 @@ public class proyectos {
     return fechaFinalizacion;
   }
 
-  /**
+  /*
    * Set the value of descripcion
    * @param newVar the new value of descripcion
    */
@@ -102,7 +110,7 @@ public class proyectos {
     descripcion = newVar;
   }
 
-  /**
+  /*
    * Get the value of descripcion
    * @return the value of descripcion
    */
@@ -110,7 +118,7 @@ public class proyectos {
     return descripcion;
   }
 
-  /**
+  /*
    * Set the value of urlGitHub
    * @param newVar the new value of urlGitHub
    */
@@ -118,7 +126,7 @@ public class proyectos {
     urlGitHub = newVar;
   }
 
-  /**
+  /*
    * Get the value of urlGitHub
    * @return the value of urlGitHub
    */

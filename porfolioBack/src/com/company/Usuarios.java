@@ -1,11 +1,11 @@
+package com.company;
 
-import java.util.*;
 
 
-/**
+/*
  * Class usuarios
  */
-public class usuarios {
+public class Usuarios {
 
   //
   // Fields
@@ -13,13 +13,18 @@ public class usuarios {
 
   private int idusuarios;
   private String usuario;
-  private String contraseña;
+  private String contraseÃ±a;
   
   //
   // Constructors
   //
-  public usuarios () { };
-  
+  public Usuarios() { };
+
+  public Usuarios(int idusuarios, String usuario, String contraseÃ±a) {
+    this.idusuarios = idusuarios;
+    this.usuario = usuario;
+    this.contraseÃ±a = contraseÃ±a;
+  }
   //
   // Methods
   //
@@ -29,7 +34,7 @@ public class usuarios {
   // Accessor methods
   //
 
-  /**
+  /*
    * Set the value of idusuarios
    * @param newVar the new value of idusuarios
    */
@@ -37,7 +42,7 @@ public class usuarios {
     idusuarios = newVar;
   }
 
-  /**
+  /*
    * Get the value of idusuarios
    * @return the value of idusuarios
    */
@@ -45,7 +50,7 @@ public class usuarios {
     return idusuarios;
   }
 
-  /**
+  /*
    * Set the value of usuario
    * @param newVar the new value of usuario
    */
@@ -53,7 +58,7 @@ public class usuarios {
     usuario = newVar;
   }
 
-  /**
+  /*
    * Get the value of usuario
    * @return the value of usuario
    */
@@ -61,20 +66,20 @@ public class usuarios {
     return usuario;
   }
 
-  /**
-   * Set the value of contraseña
-   * @param newVar the new value of contraseña
+  /*
+   * Set the value of contraseï¿½a
+   * @param newVar the new value of contraseï¿½a
    */
-  public void setContraseña (String newVar) {
-    contraseña = newVar;
+  public void setContraseÃ±a (String newVar) {
+    contraseÃ±a = newVar;
   }
 
-  /**
-   * Get the value of contraseña
-   * @return the value of contraseña
+  /*
+   * Get the value of contraseï¿½a
+   * @return the value of contraseï¿½a
    */
-  public String getContraseña () {
-    return contraseña;
+  public String getContraseÃ±a () {
+    return contraseÃ±a;
   }
 
   //

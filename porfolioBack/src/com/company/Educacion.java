@@ -1,9 +1,9 @@
+package com.company;
 
-
-/**
+/*
  * Class educacion
  */
-public class educacion {
+public class Educacion {
 
   //
   // Fields
@@ -20,8 +20,17 @@ public class educacion {
   //
   // Constructors
   //
-  public educacion () { };
-  
+  public Educacion() { };
+
+  public Educacion(int ideducacion, String institucion, String titulo, String fechaComienzo, String fechaFinalizacion, String enlace, Persona new_attribute) {
+    this.ideducacion = ideducacion;
+    this.institucion = institucion;
+    this.titulo = titulo;
+    this.fechaComienzo = fechaComienzo;
+    this.fechaFinalizacion = fechaFinalizacion;
+    this.enlace = enlace;
+    this.new_attribute = new_attribute;
+  }
   //
   // Methods
   //
@@ -31,7 +40,7 @@ public class educacion {
   // Accessor methods
   //
 
-  /**
+  /*
    * Set the value of ideducacion
    * @param newVar the new value of ideducacion
    */
@@ -39,7 +48,7 @@ public class educacion {
     ideducacion = newVar;
   }
 
-  /**
+  /*
    * Get the value of ideducacion
    * @return the value of ideducacion
    */
@@ -47,7 +56,7 @@ public class educacion {
     return ideducacion;
   }
 
-  /**
+  /*
    * Set the value of institucion
    * @param newVar the new value of institucion
    */
@@ -55,7 +64,7 @@ public class educacion {
     institucion = newVar;
   }
 
-  /**
+  /*
    * Get the value of institucion
    * @return the value of institucion
    */
@@ -63,7 +72,7 @@ public class educacion {
     return institucion;
   }
 
-  /**
+  /*
    * Set the value of titulo
    * @param newVar the new value of titulo
    */
@@ -71,7 +80,7 @@ public class educacion {
     titulo = newVar;
   }
 
-  /**
+  /*
    * Get the value of titulo
    * @return the value of titulo
    */
@@ -79,7 +88,7 @@ public class educacion {
     return titulo;
   }
 
-  /**
+  /*
    * Set the value of fechaComienzo
    * @param newVar the new value of fechaComienzo
    */
@@ -87,7 +96,7 @@ public class educacion {
     fechaComienzo = newVar;
   }
 
-  /**
+  /*
    * Get the value of fechaComienzo
    * @return the value of fechaComienzo
    */
@@ -95,7 +104,7 @@ public class educacion {
     return fechaComienzo;
   }
 
-  /**
+  /*
    * Set the value of fechaFinalizacion
    * @param newVar the new value of fechaFinalizacion
    */
@@ -103,7 +112,7 @@ public class educacion {
     fechaFinalizacion = newVar;
   }
 
-  /**
+  /*
    * Get the value of fechaFinalizacion
    * @return the value of fechaFinalizacion
    */
@@ -111,7 +120,7 @@ public class educacion {
     return fechaFinalizacion;
   }
 
-  /**
+  /*
    * Set the value of enlace
    * @param newVar the new value of enlace
    */
@@ -119,7 +128,7 @@ public class educacion {
     enlace = newVar;
   }
 
-  /**
+  /*
    * Get the value of enlace
    * @return the value of enlace
    */
@@ -127,7 +136,7 @@ public class educacion {
     return enlace;
   }
 
-  /**
+  /*
    * Set the value of new_attribute
    * @param newVar the new value of new_attribute
    */
@@ -135,7 +144,7 @@ public class educacion {
     new_attribute = newVar;
   }
 
-  /**
+  /*
    * Get the value of new_attribute
    * @return the value of new_attribute
    */

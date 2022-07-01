@@ -1,9 +1,9 @@
+package com.company;
 
-
-/**
+/*
  * Class domicilio
  */
-public class domicilio {
+public class Domicilio {
 
   //
   // Fields
@@ -15,13 +15,22 @@ public class domicilio {
   private String localidad;
   private String provincia;
   private String pais;
-  private Persona* new_attribute;
+  private Persona new_attribute;
   
   //
   // Constructors
   //
-  public domicilio () { };
-  
+  public Domicilio() { };
+
+  public Domicilio(String idDomicilio, String calle, String barrio, String localidad, String provincia, String pais, Persona new_attribute) {
+    this.idDomicilio = idDomicilio;
+    this.calle = calle;
+    this.barrio = barrio;
+    this.localidad = localidad;
+    this.provincia = provincia;
+    this.pais = pais;
+    this.new_attribute = new_attribute;
+  }
   //
   // Methods
   //
@@ -31,7 +40,7 @@ public class domicilio {
   // Accessor methods
   //
 
-  /**
+  /*
    * Set the value of idDomicilio
    * @param newVar the new value of idDomicilio
    */
@@ -39,7 +48,7 @@ public class domicilio {
     idDomicilio = newVar;
   }
 
-  /**
+  /*
    * Get the value of idDomicilio
    * @return the value of idDomicilio
    */
@@ -47,7 +56,7 @@ public class domicilio {
     return idDomicilio;
   }
 
-  /**
+  /*
    * Set the value of calle
    * @param newVar the new value of calle
    */
@@ -55,7 +64,7 @@ public class domicilio {
     calle = newVar;
   }
 
-  /**
+  /*
    * Get the value of calle
    * @return the value of calle
    */
@@ -63,7 +72,7 @@ public class domicilio {
     return calle;
   }
 
-  /**
+  /*
    * Set the value of barrio
    * @param newVar the new value of barrio
    */
@@ -71,7 +80,7 @@ public class domicilio {
     barrio = newVar;
   }
 
-  /**
+  /*
    * Get the value of barrio
    * @return the value of barrio
    */
@@ -79,7 +88,7 @@ public class domicilio {
     return barrio;
   }
 
-  /**
+  /*
    * Set the value of localidad
    * @param newVar the new value of localidad
    */
@@ -87,7 +96,7 @@ public class domicilio {
     localidad = newVar;
   }
 
-  /**
+  /*
    * Get the value of localidad
    * @return the value of localidad
    */
@@ -95,7 +104,7 @@ public class domicilio {
     return localidad;
   }
 
-  /**
+  /*
    * Set the value of provincia
    * @param newVar the new value of provincia
    */
@@ -103,7 +112,7 @@ public class domicilio {
     provincia = newVar;
   }
 
-  /**
+  /*
    * Get the value of provincia
    * @return the value of provincia
    */
@@ -111,7 +120,7 @@ public class domicilio {
     return provincia;
   }
 
-  /**
+  /*
    * Set the value of pais
    * @param newVar the new value of pais
    */
@@ -119,7 +128,7 @@ public class domicilio {
     pais = newVar;
   }
 
-  /**
+  /*
    * Get the value of pais
    * @return the value of pais
    */
@@ -127,19 +136,19 @@ public class domicilio {
     return pais;
   }
 
-  /**
+  /*
    * Set the value of new_attribute
    * @param newVar the new value of new_attribute
    */
-  public void setNew_attribute (Persona* newVar) {
+  public void setNew_attribute (Persona newVar) {
     new_attribute = newVar;
   }
 
-  /**
+  /*
    * Get the value of new_attribute
    * @return the value of new_attribute
    */
-  public Persona* getNew_attribute () {
+  public Persona getNew_attribute () {
     return new_attribute;
   }
 
