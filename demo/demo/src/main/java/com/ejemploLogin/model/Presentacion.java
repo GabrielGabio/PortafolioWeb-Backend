@@ -17,7 +17,7 @@ public class Presentacion {
     private Long id;
     @NotNull
     private String backImage;
-    
+    @NotNull
     private String imgProfile;
     @NotNull
     private String name;
