@@ -24,7 +24,7 @@ public class EncabezadoController {
     @Autowired
     IEncabezadoService encaServ;
     
-    @PreAuthorize("hasRole('ADMIN')")
+  
     @GetMapping("/ver")
     public List<Encabezado> verEncabezado() {
         return encaServ.verEncabezado();
@@ -42,7 +42,7 @@ public class EncabezadoController {
         encaServ.buscarEncabezado(id);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    
     @GetMapping("/ver/{id}")
     public Encabezado buscarEncabezado(@PathVariable Long id) {
         return encaServ.buscarEncabezado(id);

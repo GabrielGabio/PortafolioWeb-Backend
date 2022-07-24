@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -27,7 +26,7 @@ public class PresentacionController {
     @Autowired
     IPresentacionService preServ;
 
-    @PreAuthorize("hasRole('ADMIN')")
+    
     @GetMapping("/ver")
     public List<Presentacion> verPresentacion() {
         return preServ.verPresentacion();
@@ -45,7 +44,7 @@ public class PresentacionController {
         preServ.borrarPresentacion(id);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+   
     @GetMapping("/ver/{id}")
     public Presentacion buscarPresentacion(@PathVariable Long id) {
         return preServ.buscarPresentacion(id);

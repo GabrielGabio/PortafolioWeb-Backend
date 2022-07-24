@@ -15,17 +15,15 @@ public class Aptitudes {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String  progress;
-    private int valor;
+    private String valor;
     private String valorALF;
     private String color;
 
     public Aptitudes() {
     }
 
-    public Aptitudes(String name, String progress, int valor, String valorALF, String color) {
+    public Aptitudes(String name, String valor, String valorALF, String color) {
         this.name = name;
-        this.progress = progress;
         this.valor = valor;
         this.valorALF = valorALF;
         this.color = color;

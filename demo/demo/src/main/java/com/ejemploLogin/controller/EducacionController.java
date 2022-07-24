@@ -27,7 +27,7 @@ public class EducacionController {
     @Autowired
     IEducacionService eduServ;
     
-    @PreAuthorize("hasRole('ADMIN')")
+    
     @GetMapping("/ver")
     public List<Educacion> verEducacion() {
         return eduServ.verEducacion();
@@ -45,7 +45,7 @@ public class EducacionController {
         eduServ.borrarEducacion(id);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    
     @GetMapping("/ver/{id}")
     public Educacion buscarEducacion(@PathVariable("id") Long id) {
         return eduServ.buscarEducacion(id);

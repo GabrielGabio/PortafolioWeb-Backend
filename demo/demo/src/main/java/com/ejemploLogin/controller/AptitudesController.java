@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -24,7 +23,7 @@ public class AptitudesController {
     @Autowired
     IAptitudesService aptServ;
     
-    @PreAuthorize("hasRole('ADMIN')")
+    
     @GetMapping("/ver")
     public List<Aptitudes> verAptitudes() {
         return aptServ.verAptitudes();
@@ -39,10 +38,10 @@ public class AptitudesController {
     @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/borrar/{id}")
     public void borrarAptitudes(@PathVariable Long id) {
-        aptServ.buscarAptitudes(id);
+        aptServ.borrarAptitudes(id);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+  
     @GetMapping("/ver/{id}")
     public Aptitudes buscarAptitudes(@PathVariable Long id) {
         return aptServ.buscarAptitudes(id);
@@ -51,19 +50,21 @@ public class AptitudesController {
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/editar/{id}")
     public Aptitudes editarAptitudes(@PathVariable Long id,
-            @RequestParam("name") String name,
-            @RequestParam("progress") String progress,
-            @RequestParam("valor") int valor,
-            @RequestParam("valorALF") String valorALF,
-            @RequestParam("color") String color) {
+            @RequestBody Aptitudes aptitudes)
+            //@RequestParam("name") String name,
+            //@RequestParam("progress") String progress,
+            //@RequestParam("valor") int valor,
+            //@RequestParam("valorALF") String valorALF,
+            //@RequestParam("color") String color) 
+            {
         
         Aptitudes apt = aptServ.buscarAptitudes(id);
         
-        apt.setName(name);
-        apt.setProgress(progress);
-        apt.setValor(valor);
-        apt.setValorALF(valorALF);
-        apt.setColor(color);
+        
+        apt.setName(aptitudes.getName());
+        apt.setValor(aptitudes.getValor());
+        apt.setValorALF(aptitudes.getValorALF());
+        apt.setColor(aptitudes.getColor());
         
         aptServ.editarAptitudes(apt);
         return apt;
